@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+@import "header/header.scss";
+@import "banner/banner.scss";
+@import "slider/slider.scss";
+@import "main/specialOffers.scss";
+@import "main/catalogProduct.scss";
+@import "footer/footer.scss";

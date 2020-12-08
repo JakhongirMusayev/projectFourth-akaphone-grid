@@ -1,0 +1,213 @@
+header {
+	.grid-container {
+		@media screen and (max-width: 1200px) {
+			width: 1140px;
+		}
+		@media screen and (max-width: 1199px) {
+			width: 960px;
+			grid-template-columns: repeat(10, 1fr);
+		}
+		@media screen and (max-width: 991px) {
+			width: 720px;
+			grid-template-columns: repeat(6, 1fr);
+		}
+		@media screen and (max-width: 767px) {
+			width: 540px;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 60px;
+			position: relative;
+		}
+		@media screen and (max-width: 575px) {
+			width: 75%;
+			grid-template-columns: repeat(2, 1fr);
+			// padding: 0 15px;
+		}
+
+		.header-phone {
+			@media screen and (max-width: 767px) {
+				position: absolute;
+				top: 7px;
+				bottom: 10.5px;
+			}
+			@media screen and (max-width: 575px) {
+				position: absolute;
+				top: 14.5px;
+				bottom: 10.5px;
+			}
+			a {
+				img {
+					@media screen and (max-width: 767px) {
+						width: 42.11px;
+						height: 46px;
+					}
+					@media screen and (max-width: 575px) {
+						width: 32px;
+						height: 35px;
+					}
+				}
+			}
+		}
+		.header-logo-text {
+			@media screen and (max-width: 1199px) {
+				margin-left: -35px;
+				line-height: 19px;
+			}
+			@media screen and (max-width: 1024px) {
+				margin-left: -40px;
+			}
+			@media screen and (max-width: 991px) {
+				margin-left: -70px;
+			}
+			@media screen and (max-width: 767px) {
+				margin-left: -130px;
+				line-height: 7px;
+			}
+			@media screen and (max-width: 575px) {
+				grid-column-start: 1;
+				font-size: 8px;
+				line-height: 1.75px;
+				margin-left: 40px;
+			}
+
+			.header-logo {
+				@media screen and (max-width: 575px) {
+					margin-bottom: 0;
+				}
+				a {
+					img {
+						@media screen and (max-width: 575px) {
+							width: 87px;
+							height: 14px;
+						}
+					}
+				}
+			}
+		}
+
+		nav {
+			@media screen and (max-width: 1200px) {
+				grid-column-start: 3;
+				grid-column-end: 9;
+			}
+			@media screen and (max-width: 1199px) {
+				grid-column-start: 3;
+				grid-column-end: 9;
+			}
+			@media screen and (max-width: 1024px) {
+				grid-column-start: 3;
+				grid-column-end: 8;
+			}
+			@media screen and (max-width: 991px) {
+				display: none;
+			}
+
+			ul {
+				li {
+					&:nth-child(-n + 4) {
+						@media screen and (max-width: 1199px) {
+							margin-right: 11px;
+						}
+						@media screen and (max-width: 1024px) {
+							margin-right: 15px;
+						}
+					}
+				}
+			}
+		}
+		.calling {
+			@media screen and (max-width: 1200px) {
+				grid-column-start: 9;
+				grid-column-end: 12;
+			}
+			// @media screen and (max-width: 1199px) {
+			// 	grid-column-start: 9;
+			// 	grid-column-end: 12;
+			// }
+			@media screen and (max-width: 1024px) {
+				grid-column-start: 8;
+				grid-column-end: 10;
+			}
+			@media screen and (max-width: 991px) {
+				grid-column-start: 3;
+				grid-column-end: 5;
+				justify-self: start;
+			}
+			@media screen and (max-width: 767px) {
+				display: none;
+			}
+			@media screen and (max-width: 575px) {
+				display: none;
+			}
+			.call {
+				@media screen and (max-width: 1199px) {
+					margin-left: 3px;
+				}
+				@media screen and (max-width: 991px) {
+					margin-left: 17px;
+				}
+				a {
+					@media screen and (max-width: 991px) {
+						font-size: 15px;
+						line-height: 15px;
+					}
+				}
+			}
+			.callback {
+				a {
+					@media screen and (max-width: 1199px) {
+						padding: 4px 15px;
+					}
+					@media screen and (max-width: 1024px) {
+						padding: 3px 13px;
+					}
+					@media screen and (max-width: 991px) {
+						padding: 9px 23px;
+					}
+				}
+			}
+		}
+		.header-telegramm {
+			@media screen and (max-width: 1024px) {
+				grid-column-start: 10;
+			}
+			@media screen and (max-width: 991px) {
+				grid-column-start: 5;
+			}
+			@media screen and (max-width: 767px) {
+				grid-column-start: 3;
+				width: 59px;
+				height: 61px;
+			}
+			@media screen and (max-width: 575px) {
+				display: none;
+			}
+			img {
+				@media screen and (max-width: 767px) {
+					max-width: 31px;
+					max-height: 31px;
+				}
+			}
+		}
+
+		.menu-burger {
+			@media screen and (max-width: 991px) {
+				display: block;
+				justify-self: center;
+			}
+			@media screen and (max-width: 767px) {
+				position: absolute;
+				top: 17px;
+				right: 0;
+			}
+			a {
+				.burger-icon {
+					@media screen and (max-width: 575px) {
+						grid-column-start: -1;
+						width: 33px;
+						height: 23px;
+					}
+				}
+			}
+		}
+	}
+}
