@@ -1,1 +1,114 @@
+.slider {
+	width: 100%;
+	padding: 50px 0 77px;
+	background-color: #efefef;
+
+	.slider-container {
+		width: 1170px;
+		margin: 0 auto;
+		margin-bottom: 5%;
+
+		h1 {
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: 800;
+			font-size: 26px;
+			line-height: 32px;
+			color: #333333;
+			margin-bottom: 50px;
+		}
+		.slider-self {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+
+			.product-item {
+				width: 270px;
+				height: 100%;
+				background-image: url(../../images/phone-bg.png);
+				margin-bottom: 53% 0;
+
+				.product-name {
+					font-family: "Montserrat";
+					font-style: normal;
+					font-weight: bold;
+					font-size: 18px;
+					line-height: 22px;
+					color: #333333;
+					margin: 20px 28px 0 20px;
+				}
+				img {
+					width: 270px;
+					height: auto;
+				}
+				.product-color {
+					font-family: Montserrat;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 18px;
+					line-height: 22px;
+					color: rgba(176, 176, 176, 0.99);
+					margin: 6px 30px 12px;
+				}
+				.product-price-new {
+					width: 235px;
+					height: auto;
+					font-family: Montserrat;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 24px;
+					line-height: 29px;
+					color: #eb4d4d;
+					margin: 12px 20px 22px;
+					white-space: pre-wrap;
+
+					.product-price-old {
+						font-family: Montserrat;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 20px;
+						line-height: 24px;
+						text-decoration-line: line-through;
+						color: rgba(196, 196, 196, 0.5);
+					}
+				}
+				button {
+					width: 270px;
+					height: 50px;
+					background-color: #eb4d4d;
+					font-family: "Montserrat";
+					font-style: normal;
+					font-weight: bold;
+					font-size: 16px;
+					line-height: 20px;
+					text-transform: uppercase;
+					color: #ffffff;
+					text-shadow: 0px 0px 25px #ffffff;
+					border: none;
+					outline: none;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	.slider-line {
+		width: 1170px;
+		height: 8px;
+		margin: 0 auto;
+		background-image: url(../../images/slider-line.png);
+		background-color: #efefef;
+		margin-bottom: 77px;
+
+		.slider-line-rectangle {
+			width: 125px;
+			height: 14px;
+			img {
+				width: 120px;
+				height: 14px;
+			}
+		}
+	}
+}
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @import "slider-media.scss";

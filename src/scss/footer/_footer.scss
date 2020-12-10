@@ -1,2 +1,64 @@
+footer {
+	width: 100%;
+	// width: 1600px;
+	height: 300px;
+	// left: 0px;
+	// top: 3300px;
+	background-color: #062b40;
+	margin-top: 70px;
+
+	.footer-container {
+		width: 1170px;
+		margin: 0 auto;
+		display: flex;
+		font-family: "Montserrat";
+
+		.footer-logo {
+			width: 77.9px;
+			height: 77.9px;
+			background-image: url(../../images/footer_phone_rectangle.png);
+			background-repeat: no-repeat;
+		}
+		.about {
+			font-family: serif;
+		}
+		.products {
+			font-family: serif;
+		}
+		.map {
+			width: 370px;
+			height: 191px;
+			background-image: url(../../images/footer-map-bg.png);
+		}
+		.contacts-container {
+			font-family: "Montserrat";
+
+			.contacts {
+				display: flex;
+				flex-direction: column;
+			}
+			.sotial-services {
+				display: flex;
+				flex-direction: row;
+				.facebook {
+					width: 40px;
+					height: 40px;
+					background-image: url(../../images/icon_facebook_rectangle.png);
+				}
+				.telegramm {
+					width: 40px;
+					height: 40px;
+					background-image: url(../../images/icon_instagramm_rectangle.png);
+				}
+				.instagramm {
+					width: 40px;
+					height: 40px;
+					background-image: url(../../images/icon_instagramm_rectangle.png);
+				}
+			}
+		}
+	}
+}
+
 // @@@@@@@@@@@@@@@@@@@@@@@@@@
 @import "footer-media.scss";

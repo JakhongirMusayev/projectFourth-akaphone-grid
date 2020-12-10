@@ -1,2 +1,119 @@
+.banner {
+	min-width: 100%;
+
+	.banner-line {
+		width: 1170px;
+		margin: 17px auto;
+	}
+	.banner-container {
+		width: 1170px;
+		margin: 0 auto;
+		display: flex;
+		font-family: "Montserrat Regular";
+		position: relative;
+		margin-bottom: 15%;
+
+		.banner-content {
+			width: 40%;
+			margin-top: 102px;
+			h1 {
+				font-family: "Montserrat";
+				font-style: normal;
+				font-weight: 800;
+				font-size: 36px;
+				line-height: 44px;
+				color: #333333;
+				text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				margin-bottom: 30px;
+			}
+			p {
+				font-family: "Montserrat";
+				font-style: normal;
+				font-weight: normal;
+				font-size: 16px;
+				line-height: 26px;
+				text-align: justify;
+				color: #333333;
+				span {
+					white-space: pre-wrap;
+				}
+			}
+			.content-button {
+				margin-top: 30px;
+				button {
+					border: none;
+					outline: none;
+					a {
+						padding: 7% 31%;
+						background: rgba(235, 77, 77, 1);
+						color: #ffffff;
+						display: inline-block;
+						width: 100%;
+						height: auto;
+						font-family: Montserrat;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 16px;
+						line-height: 164.4%;
+					}
+				}
+			}
+		}
+		.banner-slider {
+			position: absolute;
+			right: -18%;
+
+			.slider-bg {
+				width: 781px;
+				height: 500px;
+				background-image: url(../../images/slider-bg.png);
+				.slider-clocks {
+					padding-top: 37px;
+					margin-left: -67px;
+					img {
+						width: 603px;
+						height: 348px;
+					}
+					img:hover {
+						cursor: pointer;
+					}
+				}
+				.slider-text {
+					padding-top: 20px;
+					padding-left: 40px;
+					a:first-child {
+						font-family: "Montserrat";
+						font-size: 36px;
+						font-style: normal;
+						font-weight: 700;
+						line-height: 44px;
+						color: #ffffff;
+					}
+					a:last-child {
+						img {
+							width: 34px;
+							height: 23.5px;
+							margin-left: 20.5px;
+						}
+					}
+				}
+				.slider-buttons__in {
+					display: none;
+				}
+			}
+			.slider-buttons__out {
+				img {
+					margin: 32px 15px 218px 0;
+					cursor: pointer;
+					transition: 0.1s ease;
+				}
+				img:hover {
+					outline: 3px solid #aaa;
+				}
+			}
+		}
+	}
+}
+
 // @@@@@@@@@@@@@@@@@@@@@@@@@@
 @import "banner-media.scss";
