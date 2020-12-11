@@ -98,10 +98,15 @@
 		background-image: url(../../images/slider-line.png);
 		background-color: #efefef;
 		margin-bottom: 77px;
+		position: relative;
 
 		.slider-line-rectangle {
 			width: 125px;
 			height: 14px;
+			position: absolute;
+			left: 35%;
+			bottom: -45%;
+
 			img {
 				width: 120px;
 				height: 14px;

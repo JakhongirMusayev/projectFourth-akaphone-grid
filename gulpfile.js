@@ -40,10 +40,6 @@ gulp.task('copy:fonts', () => {
 	return gulp.src('./src/fonts/**/*.*')
 		.pipe(gulp.dest('./build/fonts/'))
 });
-gulp.task('copy:bootstrap', () => {
-	return gulp.src('./src/bootstrap/**/*.*')
-		.pipe(gulp.dest('./build/bootstrap/'))
-});
 
 gulp.task('server', () => {
 	browserSync.init({
@@ -62,11 +58,10 @@ gulp.watch(
 );
 gulp.watch('./src/pug/**/*.pug', gulp.parallel('pug'));
 gulp.watch('./src/scss/**/*.scss', gulp.parallel('scss'));
-gulp.watch('./src/bootstrap/**/*.scss', gulp.parallel('copy:bootstrap'));
 gulp.watch('./src/images/**/*.*', gulp.parallel('copy:images'));
 gulp.watch('./src/fonts/**/*.*', gulp.parallel('copy:fonts'));
 
 gulp.task(
 	'default',
-	gulp.series('clean', gulp.parallel('pug', 'scss', 'copy:bootstrap', 'copy:fonts', 'copy:images'), 'server')
+	gulp.series('clean', gulp.parallel('pug', 'scss', 'copy:fonts', 'copy:images'), 'server')
 );
