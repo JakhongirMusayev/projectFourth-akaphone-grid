@@ -13,7 +13,7 @@ footer {
 		justify-content: space-between;
 
 		.footer-logo {
-			width: 276px;
+			width: 240px;
 			height: auto;
 			background-image: url(../../images/footer_phone_rectangle.png);
 			background-repeat: no-repeat;
@@ -70,75 +70,91 @@ footer {
 				}
 			}
 		}
-		.map {
-			width: 370px;
-			height: 191px;
-			background-image: url(../../images/footer-map-bg.png);
-			margin-top: 4.6%;
-			p {
-				margin-top: 23%;
-				text-align: center;
-			}
+		.about-product__hidden {
+			display: none;
 		}
-		.contacts-container {
-			font-family: "Montserrat";
-			margin-top: 4.6%;
 
-			.contacts {
-				display: flex;
-				flex-direction: column;
-				text-align: right;
+		.map-contacts {
+			display: flex;
+			flex-direction: row;
+			// flex-wrap: wrap;
+			.map {
+				width: 370px;
+				height: 191px;
+				background-image: url(../../images/footer-map-bg.png);
+				margin-top: 4.6%;
+				// margin-right: 5%;
 				p {
-					font-family: Montserrat;
-					font-style: normal;
-					font-weight: 500;
-					font-size: 12px;
-					line-height: 12px;
-					color: #dfdfdf;
-					margin-bottom: 5%;
-				}
-				a[href^="tel"],
-				a[href^="email"],
-				a[href^="#"] {
-					margin-bottom: 7%;
-					font-family: Montserrat;
-					font-style: normal;
-					font-weight: bold;
-					font-size: 16px;
-					line-height: 16px;
-					color: #ffffff;
+					margin-top: 23%;
+					text-align: center;
 				}
 			}
-			.sotial-services {
-				display: flex;
-				flex-direction: row;
-				justify-content: space-evenly;
+			.contacts-container {
+				font-family: "Montserrat";
+				margin-top: 4.6%;
 				margin-left: 5%;
-				.facebook {
-					width: 40px;
-					height: 40px;
-					background-image: url(../../images/icon_facebook_rectangle.png);
-					img {
-						padding-top: 23%;
-						padding-left: 27%;
+
+				.contacts {
+					display: flex;
+					flex-direction: column;
+					text-align: right;
+					p {
+						font-family: Montserrat;
+						font-style: normal;
+						font-weight: 500;
+						font-size: 11px;
+						line-height: 11px;
+						color: #dfdfdf;
+						margin-bottom: 5%;
+					}
+					a[href^="tel"],
+					a[href^="email"],
+					a[href^="#"] {
+						margin-bottom: 7%;
+						font-family: Montserrat;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 15px;
+						line-height: 15px;
+						color: #ffffff;
+					}
+					.facebook,
+					.telegramm,
+					.instagramm {
+						display: none;
 					}
 				}
-				.telegramm {
-					width: 40px;
-					height: 40px;
-					background-image: url(../../images/icon_instagramm_rectangle.png);
-					img {
-						padding-top: 23%;
-						padding-left: 27%;
+				.sotial-services {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-evenly;
+					// margin-left: 5%;
+					.facebook {
+						width: 40px;
+						height: 40px;
+						background-image: url(../../images/icon_facebook_rectangle.png);
+						img {
+							padding-top: 21%;
+							padding-left: 25%;
+						}
 					}
-				}
-				.instagramm {
-					width: 40px;
-					height: 40px;
-					background-image: url(../../images/icon_instagramm_rectangle.png);
-					img {
-						padding-top: 24%;
-						padding-left: 28%;
+					.telegramm {
+						width: 40px;
+						height: 40px;
+						background-image: url(../../images/icon_instagramm_rectangle.png);
+						img {
+							padding-top: 21%;
+							padding-left: 25%;
+						}
+					}
+					.instagramm {
+						width: 40px;
+						height: 40px;
+						background-image: url(../../images/icon_instagramm_rectangle.png);
+						img {
+							padding-top: 24%;
+							padding-left: 28%;
+						}
 					}
 				}
 			}

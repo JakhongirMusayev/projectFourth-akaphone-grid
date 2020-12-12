@@ -1,0 +1,207 @@
+footer {
+	height: auto;
+
+	.footer-container {
+		@media screen and (max-width: 768px) {
+			width: 95%;
+		}
+
+		.footer-logo {
+			@media screen and (max-width: 768px) {
+				width: 190px;
+				background-position: 0 13%;
+				align-items: center;
+				margin-top: 0;
+			}
+			img {
+				@media screen and (max-width: 768px) {
+					margin-left: -101px;
+					margin-top: -155px;
+				}
+			}
+			h3 {
+				@media screen and (max-width: 768px) {
+					margin-left: -45%;
+					margin-bottom: 5%;
+				}
+			}
+		}
+		.about {
+			@media screen and (max-width: 768px) {
+				display: none;
+			}
+		}
+		.products {
+			@media screen and (max-width: 768px) {
+				display: none;
+			}
+		}
+		.about-product__hidden {
+			@media screen and (max-width: 768px) {
+				display: block;
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 14px;
+				color: #ffffff;
+				margin-top: 7%;
+				ul {
+					li:nth-child(-n + 9) {
+						margin-bottom: 13%;
+					}
+				}
+			}
+		}
+		.map-contacts {
+			@media screen and (max-width: 768px) {
+				flex-direction: column;
+			}
+			.map {
+				@media screen and (max-width: 768px) {
+					width: 352px;
+					height: 150px;
+					margin-top: 50px;
+					margin-left: 23px;
+				}
+			}
+			.contacts-container {
+				.contacts {
+					@media screen and (max-width: 768px) {
+						display: grid;
+						grid-template-columns: repeat(5, 1fr);
+						grid-template-rows: repeat(5, 1fr);
+					}
+
+					p:nth-of-type(1) {
+						@media screen and (max-width: 768px) {
+							grid-column-start: 1;
+							grid-column-end: span 2;
+							grid-row-start: 1;
+							align-self: end;
+						}
+					}
+					a:nth-of-type(1) {
+						@media screen and (max-width: 768px) {
+							grid-column-start: 1;
+							grid-column-end: span 2;
+							grid-row-start: 2;
+						}
+					}
+					p:nth-of-type(2) {
+						@media screen and (max-width: 768px) {
+							grid-column-start: 4;
+							grid-column-end: span 5;
+							grid-row-start: 1;
+							align-self: end;
+						}
+					}
+					a:nth-of-type(2) {
+						@media screen and (max-width: 768px) {
+							grid-column-start: 4;
+							grid-column-end: span 5;
+							grid-row-start: 2;
+						}
+					}
+					p:nth-of-type(3) {
+						@media screen and (max-width: 768px) {
+							grid-column-start: 1;
+							grid-column-end: span 2;
+							grid-row-start: 3;
+							align-self: end;
+						}
+					}
+					a:nth-of-type(3) {
+						@media screen and (max-width: 768px) {
+							grid-column-start: 1;
+							grid-column-end: span 2;
+							grid-row-start: 4;
+						}
+					}
+					.facebook {
+						@media screen and (max-width: 768px) {
+							display: block;
+							width: 40px;
+							height: 40px;
+							background-image: url(../../images/icon_facebook_rectangle.png);
+							grid-column-start: 3;
+							grid-row-start: 3;
+							grid-row-end: span 5;
+							justify-self: end;
+							position: relative;
+							margin-top: 20%;
+							img {
+								position: absolute;
+								top: 22%;
+								left: 23%;
+							}
+						}
+					}
+					.telegramm {
+						@media screen and (max-width: 768px) {
+							display: block;
+							width: 40px;
+							height: 40px;
+							background-image: url(../../images/icon_instagramm_rectangle.png);
+							grid-column-start: 4;
+							grid-row-start: 3;
+							grid-row-end: span 5;
+							justify-self: end;
+							position: relative;
+							margin-top: 20%;
+							img {
+								@media screen and (max-width: 768px) {
+									position: absolute;
+									top: 22%;
+									left: 23%;
+								}
+							}
+						}
+					}
+					.instagramm {
+						@media screen and (max-width: 768px) {
+							display: block;
+							width: 40px;
+							height: 40px;
+							background-image: url(../../images/icon_instagramm_rectangle.png);
+							grid-column-start: 5;
+							grid-row-start: 3;
+							grid-row-end: span 5;
+							justify-self: end;
+							position: relative;
+							margin-top: 20%;
+							img {
+								@media screen and (max-width: 768px) {
+									position: absolute;
+									top: 22%;
+									left: 23%;
+								}
+							}
+						}
+					}
+				}
+				.sotial-services {
+					.facebook {
+						@media screen and (max-width: 768px) {
+							display: none;
+						}
+					}
+					.telegramm {
+						@media screen and (max-width: 768px) {
+							display: none;
+						}
+					}
+					.instagramm {
+						@media screen and (max-width: 768px) {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	.copyright {
+		text-align: center;
+		margin-top: 1.5%;
+	}
+}

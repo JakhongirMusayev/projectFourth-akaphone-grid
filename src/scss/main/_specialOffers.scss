@@ -30,6 +30,11 @@ main {
 				grid-template-columns: 40% 1fr;
 				// grid-template-rows: auto;
 				cursor: pointer;
+				&:hover {
+					border: 1px solid #edecec;
+					box-sizing: border-box;
+					box-shadow: inset 0px 5px 25px rgba(0, 0, 0, 0.2);
+				}
 
 				.eichLenovo {
 					width: 297px;
@@ -122,6 +127,11 @@ main {
 				grid-template-columns: 1fr;
 				// grid-template-rows: repeat(5, auto);
 				cursor: pointer;
+				&:hover {
+					border: 1px solid #edecec;
+					box-sizing: border-box;
+					box-shadow: inset 0px 5px 25px rgba(0, 0, 0, 0.2);
+				}
 
 				.eichKreslo-1,
 				.eichKreslo-2 {
@@ -211,6 +221,11 @@ main {
 				grid-template-columns: repeat(2, 1fr);
 				// grid-template-rows: repeat(3, auto);
 				cursor: pointer;
+				&:hover {
+					border: 1px solid #edecec;
+					box-sizing: border-box;
+					box-shadow: inset 0px 5px 25px rgba(0, 0, 0, 0.2);
+				}
 
 				.eichGalaxy-1,
 				.eichGalaxy-2 {
@@ -308,6 +323,11 @@ main {
 				grid-template-columns: repeat(2, 1fr);
 				position: relative;
 				cursor: pointer;
+				&:hover {
+					border: 1px solid #edecec;
+					box-sizing: border-box;
+					box-shadow: inset 0px 5px 25px rgba(0, 0, 0, 0.2);
+				}
 
 				.eichHyperx {
 					font-family: "Montserrat";
@@ -399,6 +419,11 @@ main {
 				// grid-template-rows: repeat(4, 1fr);
 				position: relative;
 				cursor: pointer;
+				&:hover {
+					border: 1px solid #edecec;
+					box-sizing: border-box;
+					box-shadow: inset 0px 5px 25px rgba(0, 0, 0, 0.2);
+				}
 
 				.eichXiaomi {
 					font-family: Montserrat;
@@ -490,6 +515,11 @@ main {
 				// grid-template-rows: repeat(5, 1fr);
 				position: relative;
 				cursor: pointer;
+				&:hover {
+					border: 1px solid #edecec;
+					box-sizing: border-box;
+					box-shadow: inset 0px 5px 25px rgba(0, 0, 0, 0.2);
+				}
 
 				.eichHolitic {
 					font-family: Montserrat;
@@ -560,8 +590,8 @@ main {
 					grid-row-start: 1;
 					grid-row-end: span 3;
 					position: absolute;
-					top: -27px;
-					right: -32px;
+					top: -25px;
+					right: -25px;
 				}
 			}
 		}
